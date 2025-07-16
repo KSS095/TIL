@@ -38,9 +38,9 @@
 ---
 ## 4. 실습
 ![alt text](<git.png>)
-- `git init`을 통해 git 시작
-- `git add ~~` 를 통해 Woriking Directory에 있는 파일을 Staging Area에 옮기기
-  - 현재 directory에 있는 모든 파일을 add 하려면 `git add .`
+- `git init`을 통해 로컬 저장소 설정(초기화)
+- `git add ~~` 를 통해 Staging Area에 옮기기
+  - 모든 파일을 add 하려면 `git add .`
 - `git status`를 통해 확인 가능
 
 ---
