@@ -31,3 +31,27 @@
 - `Staging Area` : `Working Directory`에서 변경된 파일 중, 다음 버전에 포함시킬 파일들을 선택적으로 추가하거나 제외할 수 있는 중간 준비 영역. 버전을 `Repository`에 `Commit` 할 때마다 `Staging Area`는 비워짐
 
 - `Repository` : 버전 이력과 파일들이 영구적으로 저장되는 영역으로, 모든 버전과 변경 이력이 기록됨
+
+---
+## 실습
+![alt text](<git.png>)
+- `git init`을 통해 git 시작
+- `git add ~~` 를 통해 Woriking Directory에 있는 파일을 Staging Area에 옮기기
+- `git status`를 통해 확인 가능
+
+---
+
+![alt text](commit.png)
+- `git commit -m "이름"` 으로 commit하려 했으나, authority 필요
+
+---
+
+![alt text](config.png)
+- `git config --global user.email "이메일"`, `~~ "이름"`을 통해 본인 인증
+- `--global` 은 이 컴퓨터 내 모든 authority를 작성한 계정으로 이용한다는 뜻
+
+---
+
+![alt text](commit2.png)
+- commit 완료
+- 잘못 commit 하였을 경우, `git resotre --staged 파일명`
