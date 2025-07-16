@@ -58,3 +58,11 @@
 ![alt text](commit2.png)
 - commit 완료
 - 잘못 commit 하였을 경우, `git resotre --staged 파일명`
+
+---
+
+## 5. 원격 저장소
+- `git remote add origin remote_repo_url`
+  - `git remote` : 로컬 저장소에 원격 저장소 추가
+  - `add origin` : 별칭을 사용해 로컬 저장소 한 개에 여러 원격 저장소를 추가 할 수 있음
+  - `remote_repo_url` : 추가하는 원격 저장소의 URL
