@@ -102,7 +102,6 @@
   - `git branch -c (이름)` : (이름)으로 branch create
   ---
   - `git branch`를 통해 확인
-
   ![alt text](image-1.png)
   ---
   - `git switch (이름)` : 독립된 작업공간으로 이동
@@ -113,5 +112,7 @@
   ---
   - `git branch -d (이름)` : 작업 완료 후 branch 삭제
   ---
-  ![alt text](graph.png)
   - 초기설정(master가 실행) > viktor가 먼저 login기능 생성(fast forward) > harry가 그 다음 article 작업 완료(harry 입장에서는 초기설정 다음 바로 했지만, three way merge. 따라서 vim이 켜짐)
+  ![alt text](graph.png)
+
+- master branch는 아무도 수정 x
