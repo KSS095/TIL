@@ -68,3 +68,8 @@
   - `git remote` : 로컬 저장소에 원격 저장소 추가
   - `add origin` : 별칭을 사용해 로컬 저장소 한 개에 여러 원격 저장소를 추가 할 수 있음
   - `remote_repo_url` : 추가하는 원격 저장소의 URL
+  - `git push origin master` : 원격 저장소에 commit 목록을 업로드
+    - commit 이력이 없다면 push 불가
+
+  - `git pull origin master` : 원격 저장소의 변경사항만을 받아옴(업데이트)
+  - `git clone remote_repo_url` : 원격 저장소 전체를 복제(다운로드)
