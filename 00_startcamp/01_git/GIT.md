@@ -52,6 +52,7 @@
 
 ![alt text](config.png)
 - `git config --global user.email "이메일"`, `~~ "이름"`을 통해 본인 인증
+  - 본인이 아니라면 push가 안됨
 - `--global` 은 이 컴퓨터 내 모든 authority를 작성한 계정으로 이용한다는 뜻
 
 ---
