@@ -37,29 +37,33 @@
 
 ---
 ## 4. 실습
-![alt text](<git.png>)
 - `git init`을 통해 git 시작
 - `git add ~~` 를 통해 Woriking Directory에 있는 파일을 Staging Area에 옮기기
   - 현재 directory에 있는 모든 파일을 add 하려면 `git add .`
 - `git status`를 통해 확인 가능
 
+![alt text](<git.png>)
+
 ---
 
-![alt text](commit.png)
 - `git commit -m "이름"` 으로 commit하려 했으나, authority 필요
 
+![alt text](commit.png)
+
 ---
 
-![alt text](config.png)
 - `git config --global user.email "이메일"`, `~~ "이름"`을 통해 본인 인증
   - 본인이 아니라면 push가 안됨
 - `--global` 은 이 컴퓨터 내 모든 authority를 작성한 계정으로 이용한다는 뜻
 
+![alt text](config.png)
+
 ---
 
-![alt text](commit2.png)
 - commit 완료
 - 잘못 commit 하였을 경우, `git restore --staged 파일명`
+
+![alt text](commit2.png)
 
 ---
 
@@ -102,17 +106,21 @@
   - `git branch -c (이름)` : (이름)으로 branch create
   ---
   - `git branch`를 통해 확인
+
   ![alt text](image-1.png)
   ---
   - `git switch (이름)` : 독립된 작업공간으로 이동
+
   ![alt text](switch.png)
   ---
   - `git merge (이름)` : (master 공간에) (이름)이 작업한 것들을 merge
+
   ![alt text](merge.png)
   ---
   - `git branch -d (이름)` : 작업 완료 후 branch 삭제
   ---
   - 초기설정(master가 실행) > viktor가 먼저 login기능 생성(fast forward) > harry가 그 다음 article 작업 완료(harry 입장에서는 초기설정 다음 바로 했지만, three way merge. 따라서 vim이 켜짐)
+
   ![alt text](graph.png)
 
 - master branch는 아무도 수정 x
