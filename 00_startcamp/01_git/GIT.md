@@ -108,7 +108,7 @@
   - `git switch (이름)` : 독립된 작업공간으로 이동
   ![alt text](switch.png)
   ---
-  - `git merge (이름)` : (master 공간에서 해야함) (이름)이 작업한 것들을 merge
+  - `git merge (이름)` : (master 공간에) (이름)이 작업한 것들을 merge
   ![alt text](merge.png)
   ---
   - `git branch -d (이름)` : 작업 완료 후 branch 삭제
