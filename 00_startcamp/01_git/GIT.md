@@ -59,7 +59,7 @@
 
 ![alt text](commit2.png)
 - commit 완료
-- 잘못 commit 하였을 경우, `git resotre --staged 파일명`
+- 잘못 commit 하였을 경우, `git restore --staged 파일명`
 
 ---
 
@@ -75,7 +75,43 @@
   - `git clone remote_repo_url` : 원격 저장소 전체를 복제(다운로드)
     - 한 번 clone하고 나면 또 할 필요가 없음
 
-  요약
+---
+  <요약>
 
-  init -> 작업 -> add -> commit -> push
-  (다른 곳에서 진행 시) -> pull
+  #### init -> 작업 -> add -> commit -> push
+  #### (다른 곳에서 진행 시) -> pull
+---
+
+- push가 불가능한 상황
+  - 내 컴퓨터에서의 commit 내역과 원격 저장소와의 commit 내역이 다를 때
+
+- 해결? : git pull 먼저 실행
+  - vim창 뜨는데 `:q`로 나가기
+  - 로컬과 원격 저장소의 내역을 합쳐진 새로운 commit이 생김
+
+---
+
+## 6. Branch
+- Branch 장점
+  
+  1. 독립된 개발 환경을 형성하기 때문에 원본(master)에 대해 안전
+  2. 하나의 작업은 하나의 브랜치로 나누어 진행되므로 체계적으로 협업과 개발이 가능
+  3. 손쉽게 브랜치를 생성하고 브랜치 사이를 이동할 수 있음
+
+- Branch Command
+  - `git branch -c (이름)` : (이름)으로 branch create
+  ---
+  - `git branch`를 통해 확인
+
+  ![alt text](image-1.png)
+  ---
+  - `git switch (이름)` : 독립된 작업공간으로 이동
+  ![alt text](switch.png)
+  ---
+  - `git merge (이름)` : (master 공간에서 해야함) (이름)이 작업한 것들을 merge
+  ![alt text](merge.png)
+  ---
+  - `git branch -d (이름)` : 작업 완료 후 branch 삭제
+  ---
+  ![alt text](graph.png)
+  - 초기설정(master가 실행) > viktor가 먼저 login기능 생성(fast forward) > harry가 그 다음 article 작업 완료(harry 입장에서는 초기설정 다음 바로 했지만, three way merge. 따라서 vim이 켜짐)
