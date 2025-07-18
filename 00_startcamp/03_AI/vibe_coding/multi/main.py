@@ -7,15 +7,15 @@ def main():
 
     # 카테고리 목록 받아오기
     res = requests.get(f"{SERVER_URL}/categories")
-    categories = res.json()
+    cat_list = res.json()
     print("[카테고리 목록]")
-    for idx, cat in enumerate(categories):
+    for idx, cat in enumerate(cat_list):
         print(f"{idx+1}. {cat}")
 
     sel = input("카테고리 번호를 선택하세요: ")
     try:
         sel_idx = int(sel) - 1
-        cat_name = categories[sel_idx]
+        cat_name = cat_list[sel_idx]
     except:
         print("잘못된 입력입니다.")
         return
@@ -27,7 +27,8 @@ def main():
     print("[곡 리스트]")
     for song in songs:
         print(f"- {song['title']} / {song['artist']}")
-    # TODO: 서버/클라이언트 및 카테고리 동기화 구현
+    if not songs:
+        print("선택한 카테고리에 곡이 없습니다.")
 
 if __name__ == "__main__":
     main()
