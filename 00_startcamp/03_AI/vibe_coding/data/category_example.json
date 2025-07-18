@@ -1,0 +1,9 @@
+{
+  "00년대": [
+    {"title": "Gee", "artist": "소녀시대", "file": "gee_intro.mp3"},
+    {"title": "거짓말", "artist": "BIGBANG", "file": "lies_intro.mp3"}
+  ],
+  "아이돌": [
+    {"title": "Love Shot", "artist": "EXO", "file": "loveshot_intro.mp3"}
+  ]
+}
