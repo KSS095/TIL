@@ -10,7 +10,7 @@
 - Python 3.8 이상 설치
 - 가상환경 생성: `python -m venv venv`
 - 가상환경 활성화: `source venv/Scripts/activate` (Windows)
-- 필수 패키지 설치: `pip install -r requirements.txt`
+- 필수 패키지 설치: `pip install -r requirements.txt`, `pip install PyQt5 pygame`
 
 ### 2. 프로젝트 폴더 구조 생성
 ```
@@ -74,10 +74,7 @@ project_root/
 ---
 
 ## 시작 방법
-1. 가상환경 생성: `python -m venv venv`
-2. 가상환경 활성화: `source venv/Scripts/activate` (Windows)
-3. 패키지 설치: `pip install -r requirements.txt`
-4. 게임 실행: `python main.py`
+`python gui_song_game.py`
 
 ---
 
