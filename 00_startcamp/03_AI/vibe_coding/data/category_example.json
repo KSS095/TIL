@@ -1,0 +1,23 @@
+{
+  "00년대": [
+    {"title": "Gee", "artist": "소녀시대", "file": "gee_intro.mp3"},
+    {"title": "거짓말", "artist": "BIGBANG", "file": "lies_intro.mp3"},
+    {"title": "아브라카다브라", "artist": "브라운아이드걸스", "file": "abracadabra_intro.mp3"},
+    {"title": "미인", "artist": "이승철", "file": "beauty_intro.mp3"}
+  ],
+  "아이돌": [
+    {"title": "Love Shot", "artist": "EXO", "file": "loveshot_intro.mp3"},
+    {"title": "CHEER UP", "artist": "TWICE", "file": "cheerup_intro.mp3"},
+    {"title": "Dynamite", "artist": "BTS", "file": "dynamite_intro.mp3"}
+  ],
+  "발라드": [
+    {"title": "보고싶다", "artist": "김범수", "file": "bogoshipda_intro.mp3"},
+    {"title": "비상", "artist": "임재범", "file": "bisang_intro.mp3"},
+    {"title": "가질 수 없는 너", "artist": "뱅크", "file": "bank_intro.mp3"}
+  ],
+  "댄스": [
+    {"title": "U", "artist": "슈퍼주니어", "file": "u_intro.mp3"},
+    {"title": "Hot Issue", "artist": "포미닛", "file": "hotissue_intro.mp3"},
+    {"title": "Tell Me", "artist": "원더걸스", "file": "tellme_intro.mp3"}
+  ]
+}
