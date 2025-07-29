@@ -1,0 +1,58 @@
+.container {
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.static-example {
+    position: static;
+    background-color: rgb(180, 180, 180);
+    width: 700px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.relative-example {
+    position: relative;
+    background-color: lightblue;
+    width: 700px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+    top: 15px;
+    left: 20px;
+    text-align: center;
+}
+
+.absolute-example {
+    position: absolute;
+    background-color: lightgreen;
+    width: 100px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 2;
+    top: 7px;
+    left: 2px;
+    text-align: center;
+}
+
+.sticky-example {
+    position: sticky;
+    background-color: lightcoral;
+    width: 700px;
+    height: 55px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 2;
+    top: 15px;
+    text-align: center;
+}
+
+.filter-content {
+    height: 1500px;
+}

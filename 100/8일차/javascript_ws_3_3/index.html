@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form id="form" class="my-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="content" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary">add</button>
+            </div>
+        </form>
+
+        <section id="cardsSection" class="row">
+
+            <!-- 카드 예시 -->
+            <!-- <article class="col-4">
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Example</h5>
+                        <p class="card-text">hello.</p>
+                    </div>
+                </div>
+            </article> -->
+            <!-- 카드 예시 -->
+
+        </section>
+
+    </div>
+
+    <script>
+        const button = document.querySelector('.btn')
+        const formTitle = document.querySelector('#title')
+        const formContent = document.querySelector('#content')
+        const formControls = document.querySelectorAll('.form-control')
+        const cardsSection = document.querySelector('#cardsSection')
+            /* 
+            사용자가 form 에 title과 content를 입력하고 submit하면, 예시와 같은 카드를 생성하여
+            div#cardSection에 추가하는 코드를 작성하시오.기능을 모두 구현하면 카드 예시 마크업은
+            주석처리 하거나 삭제한다.
+             */
+        const createCard = function(title, content) {
+            let article = document.createElement('article')
+            article.classList.add('col-4')
+
+            let div1 = document.createElement('div')
+            div1.classList.add('card', 'm-1')
+
+            let div2 = document.createElement('div')
+            div2.classList.add('card-body')
+
+            let h5 = document.createElement('h5')
+            h5.classList.add('card-title')
+
+            let p = document.createElement('p')
+            p.classList.add('card-text')
+
+            article.appendChild(div1)
+            div1.appendChild(div2)
+            div2.appendChild(h5)
+            div2.appendChild(p)
+
+            h5.textContent = title
+            p.textContent = content
+
+            return article
+        }
+
+        const submit = function(event) {
+            event.preventDefault()
+
+            let title = formTitle.value
+            let content = formContent.value
+            let article = createCard(title, content)
+
+            cardsSection.append(article)
+
+            formControls.forEach(element => {
+                element.value = ''
+            });
+        }
+
+        button.addEventListener('click', submit)
+    </script>
+</body>
+
+</html>

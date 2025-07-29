@@ -1,0 +1,131 @@
+<!-- CSS Flexbox
+'display: flex': 부모 요소를 flex 컨테이너로 설정하여 자식 요소들을 정렬합니다.
+'justify-content': 자식 요소들의 수평 정렬 방법을 설정합니다.
+'align-items': 자식 요소들의 수직 정렬 방법을 설정합니다.
+'flex-wrap': 자식 요소들이 부모 요소를 벗어날 경우 다음 줄로 이동하도록 설정합니다.
+
+학습 방향
+HTML을 사용하여 베스트 셀러와 신간 도서 섹션을 작성합니다.
+CSS Flexbox를 사용하여 섹션별 도서 목록을 중앙 정렬하고, 각 도서 카드를 수평 및 수직으로 중앙 정렬합니다.
+Flexbox 속성을 활용하여 레이아웃을 구성하고, 가독성을 높입니다.
+화면 좌측 하단에 고정된 버튼을 CSS를 사용하여 스타일링합니다. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .book-container {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #fff;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .book-author {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .book-description {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .section-title {
+            position: sticky;
+            text-align: center;
+            top: 0px;
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .top-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .top-button a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body style="height: 3000px;">
+    <h1>도서 관리 서비스에 오신 것을 환영합니다</h1>
+
+    <div class="section-title">베스트 셀러 목록</div>
+    <div class="section-container">
+        <div class="book-container">
+            <h2 class="book-title">도서 제목 1</h2>
+            <p class="book-author">저자 1</p>
+            <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at lacus vel neque ullamcorper tempus.</p>
+        </div>
+
+        <div class="book-container">
+            <h2 class="book-title">도서 제목 2</h2>
+            <p class="book-author">저자 2</p>
+            <p class="book-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+    </div>
+
+    <div class="section-title">신간 도서 목록</div>
+    <div class="section-container">
+        <div class="book-container">
+            <h2 class="book-title">도서 제목 3</h2>
+            <p class="book-author">저자 3</p>
+            <p class="book-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <div class="top-button">
+        <a href="#">TOP</a>
+    </div>
+</body>
+
+</html>
