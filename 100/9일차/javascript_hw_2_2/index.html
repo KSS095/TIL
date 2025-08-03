@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function isValid (word) {
+      return word.length >= 8 ? true : false
+    }
+    console.log(isValid('password'))
+		console.log(isValid('pwd')) 
+
+    const myJoin = function (array, separator) {
+      let result = ''
+
+      for (let idx = 0; idx < array.length; idx++) {
+        const word = array[idx]
+        result += word
+
+        if (idx === array.length - 1) {
+          continue
+        } else {  // 그 외의 상황에는
+          result += separator
+        }
+        // 코드 실행 결과 "010-1234-5678-" 이 되어 버렸음.
+          // 왜 그렇게 됐는지 이유 적고, 생각하기.
+      }
+
+      return result
+    }
+    console.log(myJoin(['010', '1234', '5678'], '-'))
+
+    // 요구사항: 객체 반환하기
+    const makeOrder = function (menu, size = 'regular') {
+
+      return { menu, size }
+    }
+    console.log(makeOrder('mocha'))
+
+    // 아래 함수를 Arrow Funcion으로 바꾸기
+    // JS에서 함수 정의할 일 생기면 -> 바로 Arrow Function으로 바꿔보기
+    function celsiusToFahrenheit (celsius) {
+      return celsius * 9 / 5 + 32
+    }
+    
+    // 화살표 함수로 바꾸는 1단계 (function) 키워드를 (=>)로 바꾸기
+    const celsiusToFahrenheit1 = (celsius) => {
+      return celsius * 9 / 5 + 32
+    }
+
+    // 화살표 함수로 바꾸는 2단계 
+    // 매개변수가 한 개면, 소괄호 생략 하기
+    const celsiusToFahrenheit2 = celsius => {
+      return celsius * 9 / 5 + 32
+    }
+
+    // 화살표 함수로 바꾸는 3단계 
+    // 블럭 내에 작성할 코드가 return 한 줄이라면, 
+    // 블럭 영역과 return 생략하기
+    const celsiusToFahrenheit3 = celsius => celsius * 9 / 5 + 32
+
+    // const celsiusToFahrenheit3 = celsius => celsius * 9 / 5 + 32
+
+  </script>
+</body>
+</html>
