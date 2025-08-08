@@ -8,7 +8,6 @@ for _ in range(10):
     tc = int(input())
     basic_list = list(map(int, input().strip().split()))
     queue = deque(basic_list)
-
     cnt = 1
     while queue[-1] > 0:
         if cnt == 6:
