@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="315a777b-b3ab-4b03-8386-0b92ec055300" name="Default Changelist" comment="" />
+    <list default="true" id="315a777b-b3ab-4b03-8386-0b92ec055300" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/17일차 (8.6).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../100_offline/17일차 (8.6)/.idea/vcs.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +29,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.01_heap_class">
+  <component name="RunManager" selected="Python.07_subset_bitmask">
     <configuration name="01_heap_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="07-heap-backtracking" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.07_subset_bitmask" />
+        <item itemvalue="Python.06_subset_backtracking" />
         <item itemvalue="Python.01_heap_class" />
         <item itemvalue="Python.03_heap_max_module" />
         <item itemvalue="Python.02_heap_min_module" />
-        <item itemvalue="Python.07_subset_bitmask" />
-        <item itemvalue="Python.06_subset_backtracking" />
       </list>
     </recent_temporary>
   </component>
