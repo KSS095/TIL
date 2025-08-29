@@ -9,34 +9,34 @@ def find_set(x):
 def union(x, y):
     root_x = find_set(x)
     root_y = find_set(y)
+
     if root_x != root_y:
         parent[root_y] = root_x
 
-def mst_kruskal(temp):
-    mst = []
-    # 가중치 정렬
-    temp.sort(key=lambda x: x[2])
-    for tp in temp:
-        x, y, w = tp
+def mst(edges):
+    mst_edges = []
+
+    edges.sort(key= lambda x: x[2])
+
+    for edge in edges:
+        x, y, w = edge
         if find_set(x) != find_set(y):
             union(x, y)
-            mst.append(tp)
-    return mst
+            mst_edges.append(edge)
+
+    return mst_edges
 
 
 T = int(input())
 for tc in range(1, T + 1):
-    V, E = map(int, input().split())    # 정점의 개수, 간선의 개수
+    V, E = map(int, input().split())
+    edges = [list(map(int, input().split())) for _ in range(E)]
+    min_weight = 0
 
-    spanning_tree = []
-    for i in range(E):
-        spanning_tree.append(list(map(int, input().split())))
+    parent = [i for i in range(V + 1)]
+    mst_edges = mst(edges)
 
-    # 모든 노드 간의 간선 정보를 기록한다.
-    parent = [i for i in range(V)]
-    temp = []
+    for mst_edge in mst_edges:
+        min_weight += mst_edge[2]
 
-    # 가중치 최솟값 찾기
-    result = mst_kruskal(spanning_tree)
-
-    print(f'#{tc} {result[2]}')
+    print(f'#{tc} {min_weight}')

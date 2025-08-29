@@ -11,8 +11,8 @@ def dijkstra(graph, start):
     visited.add(start)
 
     while heap:
-        print(heap)
-        print(distances)
+        # print(heap)
+        # print(distances)
         dist, current = heapq.heappop(heap)
         # 기존 거리보다, 갱신된 거리가 더 크고, 이미 방문한 적 있으면 패스
         if current in visited and distances[current] < dist: continue

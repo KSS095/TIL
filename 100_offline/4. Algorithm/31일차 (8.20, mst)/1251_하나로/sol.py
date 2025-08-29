@@ -18,6 +18,7 @@ def mst_kruskal(temp):
     mst = []
     # 가중치 정렬
     temp.sort(key=lambda x: x[2])
+
     for tp in temp:
         x, y, w = tp
         if find_set(x) != find_set(y):
