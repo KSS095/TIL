@@ -14,6 +14,7 @@ def floyd_warshall(graph):
             if graph[u][v] != 0:    # 다른 노드와 연결돼있다면
                 dist[u][v] = graph[u][v]    # dist 갱신(연결 안돼있으면 inf로 냅두기)
 
+    print(dist)
     # 모든 정점을 경유정점으로 고려
     for k_node in range(n):
         for start in range(n):  # 시작 노드

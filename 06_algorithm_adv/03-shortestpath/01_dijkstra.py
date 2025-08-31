@@ -8,20 +8,19 @@ def dijkstra(graph, start):
     heap = []   # 최소 힙
     heapq.heappush(heap, [0, start])    # [도달한 거리, 시작 정점]
     visited = set()
-    visited.add(start)
 
     while heap:
         # print(heap)
         # print(distances)
         dist, current = heapq.heappop(heap)
-        # 기존 거리보다, 갱신된 거리가 더 크고, 이미 방문한 적 있으면 패스
-        if current in visited and distances[current] < dist: continue
+        # 기존 거리보다 갱신된 거리가 더 크거나, 이미 방문한 적 있으면 패스
+        if distances[current] < dist or current in visited: continue
         visited.add(current)
 
         # 현재 노드 기준 인접한 모든 노드에 대해서 갱신하거나, 우선순위 큐에 삽입
         for next, weight in graph[current].items():
             next_distance = dist + weight   # 현재까지의 가중치 + 다음 위치까지의 가중치
-            # 아직 방문하지 않았고, 정점까지 도달하는 거리가 충분히 작을 때
+            # 정점까지 도달하는 거리가 충분히 작을 때
             if next_distance < distances[next]:
                 distances[next] = next_distance
                 heapq.heappush(heap, [next_distance, next])

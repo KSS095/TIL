@@ -8,18 +8,18 @@ def prim(vertices, edges):
 
     # 시작 정점에서 갈 수 있는 모든 정점들에 대한 간선 정보
     # heapq에 삽입
-    print(adj_list[start_vertex])
+    # print(adj_list[start_vertex])
     # 가중치, 시작정점, 종료정점
     min_heap = [(w, start_vertex, e) for e, w in adj_list[start_vertex]]
     heapq.heapify(min_heap)
     visited.add(start_vertex)
 
     while min_heap: # 모든 후보군 다 순회 완료 할 때까지
-        print(min_heap)
+        # print(min_heap)
         weight, start, end = heapq.heappop(min_heap)
         if end in visited: continue
 
-    print(min_heap)
+    # print(min_heap)
     # 이미 방문한 적이 있으면 건너뛰기
     visited.add(end)        # 새로운 정점 방문
     mst.append((start, end, weight))    # 이 간선 정보 mst에 추가

@@ -3,9 +3,8 @@ sys.stdin = open('sample_input.txt')
 
 import heapq
 
-
 def calc_min_distance(vertex, start):
-    distances = {v: float('inf') for v in vertex}
+    distances = [float('inf') for _ in range(N + 1)]
     distances[start] = 0
     visited = set()
 
@@ -14,26 +13,27 @@ def calc_min_distance(vertex, start):
 
     while heap:
         dist, current = heapq.heappop(heap)
+
         if distances[current] < dist or current in visited: continue
         visited.add(current)
 
         for next, weight in vertex[current].items():
-            if dist + weight < distances[next]:
-                distances[next] = dist + weight
-                heapq.heappush(heap, [dist + weight, next])
-
+            next_dist = dist + weight
+            if next_dist < distances[next]:
+                distances[next] = next_dist
+                heapq.heappush(heap, [next_dist, next])
     return distances
 
 
 T = int(input())
 for tc in range(1, T + 1):
-    V, E = map(int, input().split())
-    vertex = {v: {} for v in range(V + 1)}
+    N, E = map(int, input().split())
+    edges = [list(map(int, input().split())) for _ in range(E)]
 
-    for _ in range(E):
-        s, e, w = map(int, input().split())
+    vertex = {v: {} for v in range(N + 1)}
+
+    for s, e, w in edges:
         vertex[s][e] = w
 
-    start = 0
-    distances = calc_min_distance(vertex, start)
-    print(f'#{tc} {distances[V]}')
+    min_distance = calc_min_distance(vertex, 0)
+    print(f'#{tc} {min_distance[N]}')
