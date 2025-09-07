@@ -6,7 +6,6 @@ def bino(n, k):
         [0, 0, 0, 0]
         [0, 0, 0, 0]
     '''
-
     for i in range(n + 1):
         for j in range(min(i, k) + 1):
             if j == 0 or j == i:
