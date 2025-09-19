@@ -22,20 +22,19 @@ print("설명: find_all() 메소드를 사용하여 모든 <table> 태그를 찾
 # 3. 첫 번째 <table>의 각 행 출력
 print("\n문제 3. 첫 번째 <table>의 각 행 출력")
 if tables:
-    first_table = tables[0]  # 첫 번째 테이블을 선택합니다.
+    first_table = tables[1]  # 첫 번째 테이블을 선택합니다.
     rows = first_table.find_all('tr')  # 모든 <tr> 태그를 찾습니다.
     
-    print(first_table.prettify())  # 첫 번째 테이블의 전체 구조를 예쁘게 출력합니다.
     print("답: 첫 번째 테이블의 행:")
     for row in rows:
-        print("  -", row.text.strip())  # 각 행의 텍스트를 공백을 제거하여 출력합니다.
+        print("  -", row.get_text().strip())  # 각 행의 텍스트를 공백을 제거하여 출력합니다.
     print("설명: 첫 번째 <table>에서 모든 <tr> 태그를 찾고, 각 행의 텍스트를 공백을 제거하여 출력했습니다.")
 else:
     print("답: 테이블이 존재하지 않습니다.")
     print("설명: 테이블을 찾지 못했기 때문에 출력할 행이 없습니다.")
 
 # 4. 모든 <td> 태그 내용 추출
-td_contents = [td.text.strip() for td in first_table.find_all('td') if td.text.strip()]  # 모든 <td> 태그의 내용을 추출하고 공백을 제거합니다.
+td_contents = [td.get_text().strip() for td in first_table.find_all('td') if td.get_text().strip()]  # 모든 <td> 태그의 내용을 추출하고 공백을 제거합니다.
 print("\n문제 4. 모든 <td> 태그 내용 추출")
 print("답: <td> 태그 내용:")
 for content in td_contents:
@@ -45,8 +44,8 @@ print("설명: <table> 내의 모든 <td> 태그에서 내용을 추출하고 �
 # 5. 데이터 정제 및 구분
 print("\n문제 5. 데이터 정제 및 구분")
 if td_contents:
-    general_road = td_contents[0:4]  # 일반도로 기준 (마지막 '-' 포함)
-    city_highway = td_contents[4:]  # 도시고속 기준 (5번 인덱스의 "도시고속" 제외)
+    general_road = td_contents[1:5]  # 일반도로 기준 (마지막 '-' 포함)
+    city_highway = td_contents[6:]  # 도시고속 기준 (5번 인덱스의 "도시고속" 제외)
 
     road_types = ["일반도로", "도시고속"]
     speed_meanings = ["원활", "서행", "정체", "정보없음"]
