@@ -1,0 +1,25 @@
+# 1. 데이터 처리
+pandas
+numpy
+
+# 2. 데이터 수집
+requests
+beautifulsoup4
+xmltodict
+
+# 3. 시각화
+matplotlib
+seaborn
+plotly
+folium
+
+# 4. 공간 데이터 분석
+geopandas
+shapely
+
+# 5. 통계 / 머신러닝
+scikit-learn
+statsmodels
+
+# 6. 결과 저장 / 공유
+openpyxl
