@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/100_offline/8.%20DA/73%EC%9D%BC%EC%B0%A8%20%2810.1%29/data_science2_ws_6_2/mlruns/323774632391864949/6c888621a49c42f097e03cd699cc8fc0/artifacts
+end_time: 1759285760913
+entry_point_name: ''
+experiment_id: '323774632391864949'
+lifecycle_stage: active
+run_id: 6c888621a49c42f097e03cd699cc8fc0
+run_name: handsome-skunk-182
+run_uuid: 6c888621a49c42f097e03cd699cc8fc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759285760879
+status: 4
+tags: []
+user_id: SSAFY

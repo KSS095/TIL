@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/100_offline/8.%20DA/73%EC%9D%BC%EC%B0%A8%20%2810.1%29/data_science2_ws_6_2/mlruns/323774632391864949/23bc06131a5f4c8cb644aea2f38f85bf/artifacts
+end_time: 1759285819640
+entry_point_name: ''
+experiment_id: '323774632391864949'
+lifecycle_stage: active
+run_id: 23bc06131a5f4c8cb644aea2f38f85bf
+run_name: magnificent-wolf-850
+run_uuid: 23bc06131a5f4c8cb644aea2f38f85bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759285819615
+status: 3
+tags: []
+user_id: SSAFY

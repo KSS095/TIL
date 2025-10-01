@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/100_offline/8.%20DA/73%EC%9D%BC%EC%B0%A8%20%2810.1%29/data_science2_ws_6_2/mlruns/323774632391864949/a45dde106bb649868d8b2bbb5e12e84a/artifacts
+end_time: 1759285819746
+entry_point_name: ''
+experiment_id: '323774632391864949'
+lifecycle_stage: active
+run_id: a45dde106bb649868d8b2bbb5e12e84a
+run_name: thoughtful-gull-868
+run_uuid: a45dde106bb649868d8b2bbb5e12e84a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759285819722
+status: 3
+tags: []
+user_id: SSAFY

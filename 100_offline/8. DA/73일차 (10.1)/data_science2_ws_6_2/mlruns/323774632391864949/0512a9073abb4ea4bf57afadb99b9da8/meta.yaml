@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/100_offline/8.%20DA/73%EC%9D%BC%EC%B0%A8%20%2810.1%29/data_science2_ws_6_2/mlruns/323774632391864949/0512a9073abb4ea4bf57afadb99b9da8/artifacts
+end_time: 1759285819682
+entry_point_name: ''
+experiment_id: '323774632391864949'
+lifecycle_stage: active
+run_id: 0512a9073abb4ea4bf57afadb99b9da8
+run_name: useful-crane-849
+run_uuid: 0512a9073abb4ea4bf57afadb99b9da8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759285819651
+status: 3
+tags: []
+user_id: SSAFY

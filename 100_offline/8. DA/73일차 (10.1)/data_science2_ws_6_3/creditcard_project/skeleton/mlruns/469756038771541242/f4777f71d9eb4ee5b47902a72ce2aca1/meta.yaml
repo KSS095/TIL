@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/SSAFY/Desktop/TIL/100_offline/8.%20DA/73%EC%9D%BC%EC%B0%A8%20%2810.1%29/data_science2_ws_6_3/creditcard_project/skeleton/mlruns/469756038771541242/f4777f71d9eb4ee5b47902a72ce2aca1/artifacts
+end_time: 1759293640965
+entry_point_name: ''
+experiment_id: '469756038771541242'
+lifecycle_stage: active
+run_id: f4777f71d9eb4ee5b47902a72ce2aca1
+run_name: LogisticRegression
+run_uuid: f4777f71d9eb4ee5b47902a72ce2aca1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759293636146
+status: 3
+tags: []
+user_id: SSAFY
